@@ -1,0 +1,240 @@
+:root {
+  --verde: #9ee04b;
+  --azul: #03598a;
+  --fonte-primaria: Montserrat, Arial, Helvetica, sans-serif;
+  --fonte-secundaria: leohand, Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  background-color: var(--azul);
+}
+
+header img {
+  height: 100%;
+  width: 500px;
+  margin-left: 2rem;
+}
+
+.quem-somos-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 10px;
+}
+
+.quem-somos-section h2 {
+  font-family: var(--fonte-primaria);
+  font-size: 56px;
+  font-weight: 100;
+  color: var(--verde);
+}
+
+.o-que-e-section {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.o-que-e-section h2 {
+  font-family: var(--fonte-primaria);
+  font-size: 56px;
+  font-weight: 100;
+  color: var(--verde);
+}
+
+.o-que-e-section p {
+  font-family: var(--fonte-primaria);
+  font-size: 30px;
+  font-weight: 100;
+  color: var(--azul);
+  text-align: justify;
+  justify-content: center;
+  width: 800px;
+  margin: 10px;
+}
+
+.fundadores {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.co-fundador {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 30px;
+}
+
+.co-fundador__informacoes {
+  margin: 10px;
+  padding: 10px;
+}
+
+.co-fundador__imagem {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid var(--verde);
+}
+
+.co-fundador__cargo {
+  font-family: var(--fonte-primaria);
+  font-size: 32px;
+  font-weight: 100;
+  color: var(--verde);
+}
+
+.co-fundador__nome {
+  font-family: var(--fonte-primaria);
+  font-size: 58px;
+  font-weight: 100;
+  color: var(--verde);
+}
+
+.co-fundador__funcao {
+  font-family: var(--fonte-primaria);
+  font-size: 28px;
+  font-weight: 100;
+  color: var(--azul);
+}
+
+.idealizadora {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: flex-end;
+  width: 50%;
+  margin-right: 30px;
+}
+
+.idealizadora__informacoes {
+  margin: 10px;
+  padding: 10px;
+}
+
+.idealizadora__imagem {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid var(--verde);
+}
+
+.idealizadora__cargo {
+  font-family: var(--fonte-primaria);
+  font-size: 32px;
+  font-weight: 100;
+  color: var(--verde);
+}
+
+.idealizadora__nome {
+  font-family: var(--fonte-primaria);
+  font-size: 58px;
+  font-weight: 100;
+  color: var(--verde);
+}
+
+.idealizadora__funcao {
+  font-family: var(--fonte-primaria);
+  font-size: 28px;
+  font-weight: 100;
+  color: var(--azul);
+}
+
+.faixa-divisao {
+  width: 100%;
+  height: 10px;
+  background-color: var(--azul);
+  margin-top: 50px;
+}
+
+.principios {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.objetivo-geral {
+  font-size: 32px;
+  font-weight: 100;
+  color: var(--azul);
+  padding: 50px;
+  width: 90%;
+}
+
+.objetivos {
+  display: flex;
+  justify-content: center;
+}
+
+.objetivos-especificos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.objetivo-especifico__missao {
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  width: 30%;
+}
+
+.objetivo-especifico__missao h2 {
+  color: var(--verde);
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.objetivo-especifico__missao p {
+  color: var(--azul);
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.objetivo-especifico__visao {
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  width: 30%;
+}
+
+.objetivo-especifico__visao h2 {
+  color: var(--verde);
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.objetivo-especifico__visao p {
+  color: var(--azul);
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.objetivo-especifico__valores {
+  font-family: var(--fonte-primaria);
+  width: 30%;
+}
+
+.objetivo-especifico__valores h2 {
+  color: var(--verde);
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.objetivo-especifico__valores ul {
+  color: var(--azul);
+}
+
+.objetivo-especifico__valores ul li {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.objetivo-especificp__valores p {
+  font-size: 18px;
+  font-weight: 100;
+}
