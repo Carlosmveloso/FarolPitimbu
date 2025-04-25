@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: leohand;
+  src: url(../fonts/leohand/LeoHand-Light.ttf) format(truetype);
+  font-weight: normal;
+  font-size: normal;
+}
+
+:root {
+  --verde: #9ee04b;
+  --azul: #03598a;
+  --fonte-primaria: Montserrat, Arial, Helvetica, sans-serif;
+  --fonte-secundaria: leohand, Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--fonte-primaria);
+  font-weight: 600;
+}
+
+.card-cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: var(--azul);
+}
+
+.logo {
+  height: 100px;
+}
+
+.lista-navegacao {
+  height: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.lista-navegacao li {
+  margin: 0px 5rem;
+  border-radius: 5px;
+}
+
+.lista-navegacao li a {
+  text-decoration: none;
+  color: var(--azul);
+  padding: 5px;
+}
+
+.lista-navegacao li a:hover {
+  background-color: var(--verde);
+  border-radius: 5px;
+}
