@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+@font-face{
+  font-family: leohand;
+  src: url(../fonts/leohand/LeoHand-Light.ttf) format(truetype);
+  font-weight: normal;
+  font-size: normal;
+}
+
+
 :root {
   --verde: #9ee04b;
   --azul: #03598a;
@@ -273,4 +281,170 @@ main {
 .objetivo-especificp__valores p {
   font-size: 18px;
   font-weight: 400;
+}
+
+.rodape {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background: linear-gradient(to right, var(--azul) 70%, var(--verde) 70%);
+  margin-top: 3.125rem;
+  /*background-image: url(../assets/capa-radape2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+.patrocinadores {
+  display: flex;
+  flex-shrink: 1;
+  gap: 10px;
+}
+
+.patrocinadores h2 {
+  color: var(--verde);
+  margin: 10px;
+  font-family: var(--fonte-primaria);
+}
+
+.patrocinadores-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patrocinadores__logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 10px solid var(--verde);
+}
+
+.patrocinadores ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.patrocinadores ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.patrocinadores ul li a {
+  color: var(--verde);
+  text-decoration: none;
+  font-family: var(--fonte-primaria);
+  font-weight: 600;
+}
+
+.patrocinadores ul li a:hover {
+  text-decoration: underline;
+}
+
+.patrocinadores__redes__sociais {
+  width: 35px;
+  height: 35px;
+  background-color: var(--verde);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.apoiadores {
+  display: flex;
+  flex-shrink: 4;
+  gap: 10px;
+}
+
+.apoiadores h2 {
+  color: var(--verde);
+  margin: 10px;
+  font-family: var(--fonte-primaria);
+}
+
+.apoiadores-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.apoiadores__logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 10px solid var(--verde);
+}
+
+.apoiadores ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.apoiadores ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.apoiadores ul li a {
+  color: var(--verde);
+  text-decoration: none;
+  font-family: var(--fonte-primaria);
+  font-weight: 600;
+}
+
+.apoiadores ul li a:hover {
+  text-decoration: underline;
+}
+
+.apoiadores__redes__sociais {
+  width: 35px;
+  height: 35px;
+  background-color: var(--verde);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.palavras-impactantes {
+  flex-shrink: 0;
+  width: 500px;
+}
+
+.container {
+  display: inline-block;
+}
+
+.palavra-grande {
+  font-size: 5.25rem;
+  font-family: var(--fonte-secundaria);
+  color: var(--azul);
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.palavra-pequena {
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--azul);
+  font-family: var(--fonte-primaria);
+  font-weight: 600;
+}
+
+.palavras-impactantes ul {
+  list-style-type: none;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.palavras-impactantes ul li {
+  color: var(--azul);
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+  padding: 2px;
 }
