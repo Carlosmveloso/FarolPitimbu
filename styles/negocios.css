@@ -4,19 +4,23 @@
   font-family: leohand;
   src: url(../fonts/leohand/LeoHand-Light.ttf) format(truetype);
   font-weight: normal;
-  font-size: normal;
 }
 
 :root {
   --verde: #9ee04b;
   --azul: #03598a;
+  --preto: #000000;
   --fonte-primaria: Montserrat, Arial, Helvetica, sans-serif;
   --fonte-secundaria: leohand, Arial, Helvetica, sans-serif;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--fonte-primaria);
   font-weight: 600;
+
 }
 
 .card-cabecalho {
@@ -55,4 +59,250 @@ body {
 .lista-navegacao li a:hover {
   background-color: var(--verde);
   border-radius: 5px;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.conteudo {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 3.125rem;
+  width: 60%;
+  height: 100%;
+  align-items: center;
+}
+
+.negocios-locais__banner {
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 3.125rem;
+}
+
+.negocios-locais__section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  padding-bottom: 1.875rem;
+}
+
+.negocios-locais__card {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+  width: 45%;
+  height: 150px;
+  margin: 10px 20px 10px 0px;
+}
+
+.negocios-locais__card__imagem {
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.negocios-locais__card__descricao {
+  font-family: var(--fonte-primaria);
+}
+
+.negocios-locais__card__descricao h2 {
+  color: var(--azul);
+}
+
+.negocios-locais__card__descricao p {
+  color: var(--preto);
+}
+
+.negocios-locais__card__descricao a {
+  color: var(--azul);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rodape {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background: linear-gradient(to right, var(--azul) 70%, var(--verde) 70%);
+  /*background-image: url(../assets/capa-radape2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+.patrocinadores {
+  display: flex;
+  flex-shrink: 1;
+  gap: 10px;
+}
+
+.patrocinadores h2 {
+  color: var(--verde);
+  margin: 10px;
+}
+
+.patrocinadores-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patrocinadores__logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 10px solid var(--verde);
+}
+
+.patrocinadores ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.patrocinadores ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.patrocinadores ul li a {
+  color: var(--verde);
+  text-decoration: none;
+}
+
+.patrocinadores ul li a:hover {
+  text-decoration: underline;
+}
+
+.patrocinadores__redes__sociais {
+  width: 35px;
+  height: 35px;
+  background-color: var(--verde);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.apoiadores {
+  display: flex;
+  flex-shrink: 4;
+  gap: 10px;
+}
+
+.apoiadores h2 {
+  color: var(--verde);
+  margin: 10px;
+}
+
+.apoiadores-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.apoiadores__logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 10px solid var(--verde);
+}
+
+.apoiadores ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.apoiadores ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.apoiadores ul li a {
+  color: var(--verde);
+  text-decoration: none;
+}
+
+.apoiadores ul li a:hover {
+  text-decoration: underline;
+}
+
+.apoiadores__redes__sociais {
+  width: 35px;
+  height: 35px;
+  background-color: var(--verde);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.palavras-impactantes {
+  flex-shrink: 0;
+  width: 500px;
+}
+
+.container {
+  display: inline-block;
+}
+
+.palavra-grande {
+  font-size: 5.25rem;
+  font-family: var(--fonte-secundaria);
+  color: var(--azul);
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.palavra-pequena {
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--azul);
+  font-weight: 600;
+}
+
+.palavras-impactantes ul {
+  list-style-type: none;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.palavras-impactantes ul li {
+  color: var(--azul);
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+  padding: 2px;
 }
